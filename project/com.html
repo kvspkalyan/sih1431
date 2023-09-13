@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>compiler list</title>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=wght@100;200;300&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            *
+            {
+                padding: 0;
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+
+            }
+            body
+            {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url("ce.png");
+                background-repeat: no-repeat;
+                background-size: 106% 165%;
+
+                
+            }
+            header{
+                position: absolute;
+                top: 0;
+                left:0;
+                width:100%;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:30px 10px;
+                z-index:5px;
+                box-shadow: 0 0 10px #000;
+                background: rgba(0,0,0,0.5);
+                }
+          .logo {
+            font-size: 40px;
+            color:#ffffff;
+            letter-spacing: 1px;
+            font-weight: 800;
+            margin-left: none;
+            }
+        .nav{
+            display: flex;
+        }
+        .nav li {
+            list-style: none;
+             margin:0 10px;
+
+        }
+        .nav li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition:0.3s;
+        margin-right: 20px;    
+        }
+        .nav li:hover a{
+        color:red;
+        }
+            .box img {
+               border: 1px solid #ddd;
+               border-radius: 4px;
+               padding: 5px;
+               width: 100px;
+            }
+
+            .box img:hover {
+                    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                }
+            .box
+            {
+                width: 300px;
+                height: 350px;
+                background-color: black;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 30px;
+                margin-top: 100px;
+                border-radius: 20px;
+                transition: .5s;
+                position: relative;
+                margin-left: 20px;
+                padding-left: 10px;
+                background: transparent;
+            }
+            .box:hover
+            {
+                box-shadow: 0 0 25px black;
+                background:transparent;
+            }
+            .box h2
+            {
+                font-size: 22px;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+            .box p
+            {
+                font-size: 16px;
+                font-weight: 200;
+                line-height: 30px;
+                color: #7a7a7a;
+                padding-top: 15px;
+            }
+            .box button
+            {
+                width: 100px;
+                height: 55px;
+                border-radius: 30px;
+                border: none;
+                margin-left: 20px;
+                color: #fff;
+                font-weight: bold;
+                background-color: #fe4c1c;
+                font-size: 18px;
+                border: 1px solid #fe4c1c;
+                cursor: pointer;
+                box-shadow: 12px 12px 20px 0 rgb(254 76 28/30%);
+                transition: .5s;
+                position: absolute;
+                overflow: hidden;
+                padding: 1px;
+                top: 400px;
+                left: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .box button:before
+            {
+                content: '';
+                position: absolute;
+                height: 55px;
+                top: 0;
+                bottom: 0;
+                left: -150%;
+                transition: .8s;
+                background: linear-gradient(to left,rgb(255 255 255/25%),transparent);
+            }
+            .box button:hover
+            {
+                box-shadow: none;
+            }
+            .box:hover button
+            {
+                position: absolute;
+                top: 240px;
+                left: 65px;
+                visibility: visible;
+
+            }
+            .box ion-icon
+            {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 50%;
+                margin-left: 10px;
+                color: #fe4c1c;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">E-LEARNING</a>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-left"></i></i>back</a></li>
+            </ul>
+        </header>
+        <div class="box">
+        <img src="cg.png">
+        <h2>online compiler gdb</h2>
+        <a href="https://www.onlinegdb.com/online_c_compiler"><button>goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div> 
+      <div class="box">
+        <img src="cp.png">
+        <h2>online compiler programiz</h2>
+        <p> this compiler all language all available.  </p>
+        <a href="https://www.programiz.com/c-programming/online-compiler/#google_vignette"><button>goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div> 
+      <div class="box">
+        <img src="cgfg.png">
+        <h2>online compiler geeksforgeeks</h2>
+        <p>this compiler all langiage all available. </p>
+        <a href="https://ide.geeksforgeeks.org/online-c-compiler"><button>goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div> <div class="box">
+        <img src="co.png">
+        <h2>online compiler onecompiler</h2>
+        <p>this compiler have all language available </p>
+        <a href="https://onecompiler.com/"><button>goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div>
+      <div class="box">
+        <img src="ci.png">
+        <h2>online  compiler ideone</h2>
+        <p>this compiler having all language. </p>
+        <a href="https://www.ideone.com/"><button> goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+        
+      </div>
+      <div class="box">
+        <img src="cc.png">
+        <h2>online compiler codechef </h2>
+        <p>this compiler having all language </p>
+        <a href="https://www.codechef.com/ide"><button>goto<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div>
+      </div>    
+    </body>
+</html>

@@ -1,0 +1,111 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial;
+}
+.card{
+    display:inline-block;
+    width: 20%;
+    padding-left:100px;
+
+}
+
+.card .a1{
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a2{
+    width: 90%;
+
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color:blueS;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a3{
+    width: 110%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a4{
+    width: 100%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color:blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a5{
+    width: 80%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 60px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a6{
+    width: 140%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a7{
+    width: 100%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+.card .a8{
+    width: 100%;
+    display: inline-block;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 3px 2px 10px black;
+    background-color: blues;
+    font-size: 100%;
+    text-align: center;
+}
+
+    .image img{
+        width: 50%;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+.des{
+    text-align: center;
+}

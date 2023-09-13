@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>website</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" href="style9.css"/>
+        <title>playlist</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">E-LEARING</a>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-left"></i></i>back</a></li>
+                <li><a href="#">watch list</a></li>
+                <li><a href="#">playlist</a></li>
+                <li><a href="#">list</a></li>
+            </ul>
+            <div class="search">
+               <input type="text" placeholder="search">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="content active">
+                <img src="the-65-title.png" alt="" class="movie-title"/>
+            
+            <h4>
+                <span>2023</span><span><i>12+</i></span>
+                <span>2h 14min</span><span>romance</span>
+            </h4>
+            <div class="button">
+                <a href="#"><i class="fa-solid fa-play"></i> watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i> list</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <a class="carousel-item" href="https://youtube.com/playlist?list=PLWSZr_wlNWax9fqyNyt6Q3ADBgwLE2HvU&si=ZC90xmlTJak3QZTA"><img src="cm.png"></a>
+                <a class="carousel-item" href="https://youtube.com/playlist?list=PLnDoOFdD0anzRsXwKCTTf7chFLOgWN0UM&si=NyQGD1XcBlb3JfJ8"><img src="cmk.png"></a>
+                <a class="carousel-item" href="https://youtube.com/playlist?list=PLD2rn0SPO4KIADAllBHDngjHs9xGVZ5xl&si=WMHCzdgp5OwKdWPl"><img src="cmc.png"></a>
+                <a class="carousel-item" href="https://youtube.com/playlist?list=PLCx-k6Qe-qShOnyqpTckJd9qWflu0Ah5I&si=L_rWgm-tCGVNG77E"><img src="cmm.png"></a>
+              </div>
+        </div>
+        
+       </div>
+      <script src="https://code.jquery.com/jquery-3.7.0.js"></script>  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="script9.js"></script>
+      <script>
+        $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+      </script>
+    </body>
+    </html>

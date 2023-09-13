@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>courses</title>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=wght@100;200;300&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            *
+            {
+                padding: 0;
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+
+            }
+            body
+            {
+                width: 200%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url(cc.png);
+                background-repeat: no-repeat;
+                background-size: 204% 100%;
+                background-image: url("cb.png");
+
+            }
+            header{
+                position: absolute;
+                top: 0;
+                left:0;
+                width:200%;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:30px 10px;
+                z-index:5px;
+                box-shadow: 0 0 10px #000;
+                background: rgba(0,0,0,0.5);
+                }
+          .logo {
+            font-size: 40px;
+            color:#ffffff;
+            letter-spacing: 1px;
+            font-weight: 800;
+            margin-left: none;
+            }
+        .nav{
+            display: flex;
+        }
+        .nav li {
+            list-style: none;
+             margin:0 10px;
+
+        }
+        .nav li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition:0.3s;
+        margin-right: 20px;    
+        }
+        .nav li:hover a{
+        color:red;
+        }
+            .box
+            {
+                width: 300px;
+                height: 350px;
+                background-color: black;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 15px;
+                margin-top: 100px;
+                border-radius: 20px;
+                transition: .5s;
+                position: relative;
+                margin-left: 20px;
+                background: transparent;
+            }
+            .box img {
+               border: 1px solid #ddd;
+               border-radius: 4px;
+               padding: 5px;
+               width: 100px;
+            }
+
+            .box img:hover {
+                    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+                }
+            .box:hover
+            {
+                box-shadow: 0 0 25px #999999;
+                background-color: transparent;
+            }
+            .box h2
+            {
+                font-size: 22px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                color: white;
+            }
+            .box p
+            {
+                font-size: 16px;
+                font-weight: 200;
+                line-height: 30px;
+                color: white;
+                padding-top: 15px;
+            }
+            .box button
+            {
+                width: 180px;
+                height: 55px;
+                border-radius: 40px;
+                border: none;
+                margin-left: 20px;
+                color: #fff;
+                font-weight: bold;
+                background-color: #fe4c1c;
+                font-size: 18px;
+                border: 1px solid #fe4c1c;
+                cursor: pointer;
+                box-shadow: 12px 12px 20px 0 rgb(254 76 28/30%);
+                transition: .5s;
+                position: absolute;
+                overflow: hidden;
+                padding: 1px;
+                top: 350px;
+                left: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box button:before
+            {
+                content: '';
+                position: absolute;
+                height: 55px;
+                top: 0;
+                bottom: 0;
+                left: -150%;
+                transition: .8s;
+                background: linear-gradient(to left,rgb(255 255 255/25%),transparent);
+            }
+            .box button:hover
+            {
+                box-shadow: none;
+            }
+            .box:hover button
+            {
+                position: absolute;
+                top: 240px;
+                left: 65px;
+                visibility: visible;
+
+            }
+            .box ion-icon
+            {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 50%;
+                margin-left: 10px;
+                color: #fe4c1c;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">E-LEARNING</a>
+            <ul class="nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-left"></i></i>back</a></li>
+            </ul>
+        </header>
+        <div class="box">
+        <img src="ccp.png">
+        <h2>c language</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <a href="c playlist.html"><button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div> 
+      <div class="box">
+        <img src="cj.png">
+        <h2>java</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <a href="language.html"><button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div> 
+      <div class="box">
+        <img src="cjs.png">
+        <h2>java script</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button>
+      </div> <div class="box">
+        <img src="ccss.png">
+        <h2>css</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button>
+      </div>
+      <div class="box">
+        <img src="cc++.png">
+        <h2>c++</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <button> goto course<ion-icon name="arrow-forward-outline"></ion-icon></button>
+        
+      </div>
+      <div class="box">
+        <img src="">
+        <h2>c#</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button>
+      </div>
+      <div class="box">
+        <img src="p1.jpg">
+        <h2>python</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <a href="pp.html"><button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div>  
+      <div class="box">  
+      <img src="html.png">
+        <h2>html</h2>
+        <p>this language is mainly used in oops concept as it is an object oriented programming. </p>
+        <a href="pp.html"><button>goto course<ion-icon name="arrow-forward-outline"></ion-icon></button></a>
+      </div>    
+    </body>
+</html>

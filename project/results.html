@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Search Topics</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <link rel="stylesheet" href="sr.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" name="" id="">
+            <div class="logo"><h1>E-LEARNING</h1></div>
+            <div class="search-box">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Enter a YouTube search term">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <script src="https://www.googleapis.com/youtube/v3/"></script>
+        </header>
+        <div id="search-results-container">
+            <div id="search-results"></div>
+        </div>
+        <script>
+            // Replace with your own API key
+            const API_KEY = 'AIzaSyA0fTqiCRFCDgAahFW-B1wDLuBkkGpIl7M';
+        
+            // Function to perform a YouTube API search
+            function searchYouTube(query) {
+                gapi.client.init({
+                    apiKey: API_KEY,
+                });
+        
+                gapi.client.load('youtube', 'v3', function() {
+                    const request = gapi.client.youtube.search.list({
+                        part: 'snippet',
+                        q: query,
+                        maxResults: 25, // Adjust as needed
+                    });
+        
+                    request.execute(function(response) {
+                        const searchResults = document.getElementById('search-results');
+                        searchResults.innerHTML = '';
+        
+                        response.result.items.forEach(item => {
+                            const videoTitle = item.snippet.title;
+                            const videoId = item.id.videoId;
+                            const videoThumbnail = item.snippet.thumbnails.default.url;
+        
+                            const videoLink = `<a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">${videoTitle}</a>`;
+                            const thumbnailImage = `<img src="${videoThumbnail}" alt="${videoTitle}">`;
+        
+                            const resultItem = document.createElement('div');
+                            resultItem.innerHTML = `${thumbnailImage}${videoLink}`;
+                            searchResults.appendChild(resultItem);
+                        });
+                    });
+                });
+            }
+        
+            // Handle the form submission
+            const searchForm = document.getElementById('search-form');
+            searchForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const searchTerm = document.getElementById('search-input').value;
+                searchYouTube(searchTerm);
+            });
+        </script>
+        <script src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
+    </body>
+</html>
